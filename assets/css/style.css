@@ -1,300 +1,337 @@
 /* presets */
 @import url('https://fonts.googleapis.com/css?family=Anton|Oswald');
 
-*{
-	font-family:helvetica;
-	box-sizing: border-box;
-	margin:0;
-	padding:0;
+* {
+    font-family: helvetica;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6{
-	font-family: 'Oswald', sans-serif;
-	text-transform:uppercase;
-	font-weight:normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
-h1{
-	font-size:50px;
-	margin-bottom:20px;
-	color:'black';
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: 'black';
 }
 
-h2{
-	text-align:center;
-	font-size:50px;
-	margin-bottom:20px;
-	color:'black';
+h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: 'black';
 }
 
-#logo{
-	font-family: 'Anton', sans-serif;
-	color:'black';
-	padding:10px;
-	text-align: left;
-	font-size:25px;
-	margin-bottom:0px;
-	letter-spacing:5px;
+#logo {
+    font-family: 'Anton', sans-serif;
+    color: 'black';
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 0px;
+    letter-spacing: 5px;
 }
 
-@keyframes scale{
-	0%{
-		transform:scale(1,1);
-	}
-	100%{
-		transform:scale(1.5,1.5);
-	}
+@keyframes scale {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1.5, 1.5);
+    }
 }
 
-.btn{
-	display:inline-block;
-	border:5px double 'black';
-	color: #fff;
-	text-decoration: none;
-	text-transform:uppercase;
-	padding:5px 10px;
-	margin:10px 0px;
-	font-size:20px;
-	border-radius: 10px;
-	font-weight:bold;
-	background:#000;
+.btn {
+    display: inline-block;
+    border: 5px double 'black';
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 10px 0px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    background: #000;
 }
 
-.btn:hover{
-	border:5px double #B30707;
-	color: #B30707;
-	animation: scale .25s linear 1;
-	transform:scale(1.5,1.5);
+.btn:hover {
+    border: 5px double #B30707;
+    color: #B30707;
+    animation: scale .25s linear 1;
+    transform: scale(1.5, 1.5);
 }
 
-img{
-	max-width:100%;
+img {
+    max-width: 100%;
 }
 
 /* nav */
-header{
-	position:relative;
-	border-bottom:1px solid 'black';
+header {
+    position: relative;
+    border-bottom: 1px solid 'black';
 }
 
-nav{
-	position:absolute;
-	top:18px;
-	right:18px;
+nav {
+    position: absolute;
+    top: 18px;
+    right: 18px;
 }
 
-nav ul{
-	list-style: none;
+nav ul {
+    list-style: none;
 }
 
-nav li{
-	display: inline-block;
+nav li {
+    display: inline-block;
 }
 
-nav a{
-	color:'black';
-	text-decoration: none;
-	padding:10px 15px;
-	border-radius: 10px;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #000;
 }
 
-nav a:hover{
-	color:#fff;
-	background:#000;
+nav a:hover {
+    color: #000;
+    background: #fff;
 }
+
 /* Column Structs */
 
-.container{
-	max-width: 1200px;
-	margin:0 auto;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.container:after{
-	content:'';
-	display:block;
-	clear:both;
-}
-.col{
-	float:left;
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+
+
 }
 
-.c33{
-	width:33.333333%;
+.col {
+    float: left;
 }
-.c67{
-	width:66.666667%;
+
+.c33 {
+    width: 33.333333%;
 }
-.c25{
-	width:25%;
+
+.c67 {
+    width: 66.666667%;
 }
-.c50{
-	width:50%;
+
+.c25 {
+    width: 25%;
+
 }
+
+.c50 {
+    width: 50%;
+}
+
 /* hero */
-#hero{
-	background:url(../img/bg.jpg);
-	background-size:cover;
-	background-position: center center;
+#hero {
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 
-.overlay{
-	background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));
-	padding:50px 0px;
+
+.overlay {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    padding: 50px 0px;
 }
 
-#hero .container{
-	max-width:650px;
+#hero .container {
+    max-width: 650px;
 }
 
-#hero .c67{
-	padding-left:40px;
-}
-#hero h1{
-	font-size:60px;
-	margin-bottom: 0;
-	color:#000;
+#hero .c67 {
+    padding-left: 40px;
 }
 
-#hero h2{
-	font-size:40px;
-	margin-bottom: 0;
-	text-align: left;
-	color:#000;
+#hero h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+    color: #000;
 }
 
-#hero img{
-	border-radius:50%;
-	box-shadow:5px 5px 10px 10px rgba(255,255,255,.5);
+#hero h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+    text-align: left;
+    color: #000;
+}
+
+#hero img {
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px 10px rgba(255, 255, 255, .5);
 }
 
 /* section presets */
-#about, #portfolio, .cta{
-	padding:50px 0px 100px;
+#about,
+#portfolio,
+.cta {
+    padding: 50px 0px 100px;
 }
 
 /* about */
-#about{
-	border-top:1px solid #000;
-	border-bottom:1px solid #000;
+#about {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
 
-.lang{
-	border:5px double #000;
-	background:#000;
-	padding:40px;
-	margin:10px;
-	border-radius: 10px;
+.lang {
+    border: 5px double #000;
+    background: #000;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
-.lang h3{
-	font-size:50px;
-	text-align: center;
-	color:#fff;
+.lang h3 {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
 }
 
 /* portfolio */
 
-#portfolio{
-	background:linear-gradient(#fff, #000);
+#portfolio {
+    background: linear-gradient(#fff, #000);
+
 }
 
-.project{
-	margin:10px;
-	text-align:center;
-	border:1px solid #fff;
-	background:#000;
-	border-radius: 0px 0px 10px 10px;
-    color:#fff
+.project {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #fff;
+    background: #000;
+    border-radius: 0px 0px 10px 10px;
+    color: #fff;
+    display: block;
 }
 
-.project h4, .project p{
-	padding:0px 10px;
+.project:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
+
 }
 
-.project h4{
-	padding-top:10px;
+.project h4,
+.project p {
+    padding: 0px 10px;
 }
 
-.project p{
-	padding-bottom:10px;
+.project h4 {
+    padding-top: 10px;
+}
+
+.project p {
+    padding-bottom: 10px;
 }
 
 /* cta */
 
-.cta{
-	background: #000;
+.cta {
+    background: #000;
 }
 
-.cta *{
-	color:#fff;
-	text-align: center;
+.cta * {
+    color: #fff;
+    text-align: center;
 }
 
-.cta .container{
-	width:650px;
+.cta .container {
+    width: 650px;
 }
 
-.cta p{
-	margin-bottom:10px;
+.cta p {
+    margin-bottom: 10px;
 }
 
-.cta .btn{
-	border:none;
-	color:#000;
-	background:#fff;
+.cta .btn {
+    border: none;
+    color: #000;
+    background: #fff;
 }
 
-.cta .btn:hover{
-	background:#B30707;
+.cta .btn:hover {
+    background: #B30707;
 }
 
-.cta a{
-	text-decoration: none;
-	padding:5px 10px;
+.cta a {
+    text-decoration: none;
+    padding: 5px 10px;
 }
 
-.cta .fa:hover{
-	color:#B30707;
+.cta .fa:hover {
+    color: #B30707;
 }
 
-.cta .fa{
-	font-size:30px;
+.cta .fa {
+    font-size: 30px;
 }
 
-#contact{
-	background: url(../img/bg.jpg);
-	background-position:center center;
-	background-size:cover;
-	max-width: 100%;
+#contact {
+    background: url(../img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    max-width: 100%;
 }
 
-.ol2{
-	background:linear-gradient(rgba(255, 255, 255, .95), rgba(255, 255, 255, 0));
-	padding:50px;
+.ol2 {
+    background: linear-gradient(rgba(255, 255, 255, .95), rgba(255, 255, 255, 0));
+    padding: 50px;
 }
 
-label{
-	margin-bottom:5px;
-	display: block;
-	max-width:400px;
+label {
+    margin-bottom: 5px;
+    display: block;
+    max-width: 400px;
 }
 
-label input, label textarea{
-	width:100%;
-	padding:10px;
-	border-radius:10px;
-	border:1px solid #000;
-	font-size:16px;
+label input,
+label textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    font-size: 16px;
 }
 
-label textarea{
-	min-height:100px;
+label textarea {
+    min-height: 100px;
 }
 
 
 
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
 
 
-
-
-
+a:link {
+    text-decoration: none;
+}
